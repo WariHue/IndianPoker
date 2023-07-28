@@ -1,17 +1,17 @@
 <script lang="ts">
   import Card from "./lib/Card.svelte";
-  let myTypeOfCard = "Spade";
   let myNumberOfCard = 1
   const click = (type:string): void => {
-    myTypeOfCard= type
-    myNumberOfCard++
+    if(myNumberOfCard >= 10)
+    {}else
+      myNumberOfCard++
   }
 </script>
 
 <main>
-  <hi class="j">{myTypeOfCard}!</hi>
+  <hi class="j">Hello WariHue!</hi>
   <button on:click={() => {click("Heart")}}>a</button>
-  <Card type={myTypeOfCard} num={myNumberOfCard}/>
+  <Card num={myNumberOfCard}/>
 </main>
 
 <style>

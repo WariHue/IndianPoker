@@ -1,6 +1,11 @@
 <script>
-    export let type, num
+    export let num
 </script>
 
-<img src="/{type}-{num}.png" alt="1" width="300px"/>
-<h1>{type}</h1>
+<img src="/Poker-{num}.png" alt="1" width="200px" class="card"/>
+
+<style>
+    .card{
+        margin: auto;
+    }
+</style>
